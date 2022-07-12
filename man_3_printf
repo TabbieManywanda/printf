@@ -1,0 +1,53 @@
+.TH man 3 "12 July 2022" "_printf man page"
+
+.SH NAME
+_printf - produces output according to a format
+
+.SH SYNOPSIS
+#include "main.h"
+int _printf(const char *format, ...);
+
+DESCRIPTION
+The _printf function is a variadic fnction which produces output according to a format specified by the user and prints it to the standard output; much like the standard C library printf function.
+It can receive a variable number of arguments.
+
+.RS 3
+c	prints a character variable
+.br
+s	prints a string variable
+.br
+d	prints an integer and takes an integer value as a signed decimal integer
+.br
+i	prints an integer and takes in a decimal, hexadecimal, or octal type
+.br
+b	prints abinary number
+.br
+u	prints an unsigned integer
+.br
+x	prints a hexadecimal number
+.br
+X	prints a hexadecimal number in caps
+.br
+.RE
+
+.SH RETURN
+The function will return the number of characters printed if successful. If unsuccessful,or if any errors are encountered, it returns -1.
+
+.SH EXAMPLES
+To print "Hello World", you would do as follows:
+
+#include "main.h"
+_printf("Hello %s", World);
+
+.SH SEE ALSO
+printf(3)
+_putchar.c
+
+.SH NOTES
+_printf uses a custom character printing function called _putchar which has a static buffer of 1024 bytes and uses the system call write.
+
+.SH BUGS
+_printf does not take care offield length and precision modifiers which the standard printf can do.
+
+.SH AUTHORS
+Tabitha Manywanda and Eben Wafula
