@@ -16,7 +16,7 @@ int _printf(const char *format, ...)
 	register int count = 0;
 
 	va_start(args, format);
-	if (!format || (format[0] == '%' && ! format[1]))
+	if (!format || (format[0] == '%' && !format[1]))
 		return (-1);
 	if (format[0] == '%' && format[1] == ' ' && !format[2])
 		return (-1);
@@ -34,8 +34,8 @@ int _printf(const char *format, ...)
 				str++;
 			fxnptr = get_print(*str);
 			count += (fxnptr)
-				?fxnptr(args, &indicators)
-				:_printf("%%%c", *str);
+				? fxnptr(args, &indicators)
+				: _printf("%%%c", *str);
 		}
 		else
 			count += _putchar(*str);
