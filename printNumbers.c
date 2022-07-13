@@ -1,14 +1,14 @@
 #include "main.h"
 /**
  *printInteger - prints integer
- *@1: arguments
+ *@l: arguments
  *@f: pointer to struct
  *Return: number of printed chars
  */
-int printInteger(va_list 1, indicators_t *f)
+int printInteger(va_list l, indicators_t *f)
 {
-	int n = va_arg(1, int);
-	int res = count_digit(n);
+	int n = va_arg(l, int);
+	int res = counter(n);
 
 	if (f->space == 1 && f->plus == 0 && n >= 0)
 		res += _putchar(' ');
@@ -22,14 +22,14 @@ int printInteger(va_list 1, indicators_t *f)
 
 /**
  *unsignPrint - prints unsigned integer
- *@1: arguments
+ *@l: arguments
  *@f: pointer to struct
  *
  *Return: number of printed chars
  */
-int unsignPrint(va_list 1, indicators_t *f)
+int unsignPrint(va_list l, indicators_t *f)
 {
-	insigned int u = va_arg(1, unsigned int);
+	unsigned int u = va_arg(l, unsigned int);
 	char *str = convert(u, 10, 0);
 
 	(void)f;

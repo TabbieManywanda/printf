@@ -19,6 +19,6 @@ int printAddress(va_list l, indicators_t *f)
 		return (_puts("(nil)"));
 	str = convert(p, 16, 1);
 	count += _puts("0x");
-	count += +puts(str);
+	count += _puts(str);
 	return (count);
 }

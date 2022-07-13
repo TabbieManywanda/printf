@@ -27,7 +27,7 @@ int hexaPrint(va_list l, indicators_t *f)
  */
 int hexaBig(va_list l, indicators_t *f)
 {
-	unsigned int num = va_arg(1, unsigned int);
+	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 16, 0);
 	int count = 0;
 
@@ -46,7 +46,7 @@ int hexaBig(va_list l, indicators_t *f)
  */
 int terribletwos(va_list l, indicators_t *f)
 {
-	unsigned int num = va_arg(1, unsigned int);
+	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 2, 0);
 
 	(void)f;
@@ -62,7 +62,7 @@ int terribletwos(va_list l, indicators_t *f)
  */
 int eightPrint(va_list l, indicators_t *f)
 {
-	unsigned int num = va_arg(1, unsigned int);
+	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 8, 0);
 	int count = 0;
 

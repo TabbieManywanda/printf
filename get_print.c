@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  *get_print - selects right printing function
  *@s: conversion specifier
@@ -7,7 +8,7 @@
  */
 int (*get_print(char s))(va_list, indicators_t *)
 {
-	ph arr[] = {
+	fH arr[] = {
 		{'i', printInteger},
 		{'s', printStr},
 		{'c', printC},
@@ -23,11 +24,18 @@ int (*get_print(char s))(va_list, indicators_t *)
 		{'p', printAddress},
 		{'%', percentage},
 		};
+
 	int indicators = 14;
 
 	register int i;
 
 	for (i = 0; i < indicators; i++)
+	{
 		if (arr[i].c == s)
+		{
 			return (arr[i].f);
+		}
+	}
+
 	return (NULL);
+}
