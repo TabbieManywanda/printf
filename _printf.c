@@ -8,7 +8,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int (*fxnptr)(va_list, flags_t *);
+	int (*fxnptr)(va_list, indicators_t *);
 	const char *str;
 	va_list args;
 	indicators_t indicators = {0, 0, 0};
