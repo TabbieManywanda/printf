@@ -1,16 +1,16 @@
 #include "main.h"
 /**
  *capitalsPrint - non printable characters
- *@1: arguments
+ *@l: arguments
  *@f: pointer to struct
  *
  * Return: number of printed chars
  */
-int capitalsPrint(va_list 1, indicators_t *f)
+int capitalsPrint(va_list l, indicators_t *f)
 {
 	int i, count = 0;
 	char *res;
-	char *s = va_arg(1, char *);
+	char *s = va_arg(l, char *);
 
 	(void)f;
 	if (!s)
@@ -33,12 +33,12 @@ int capitalsPrint(va_list 1, indicators_t *f)
 
 /**
  *percentage - prints percent
- *@1: arguments
+ *@l: arguments
  *@f: pointer to struct
  *
  * Return: number of printed chars
  */
-int percentage(va_list 1, indicators_t *f)
+int percentage(va_list l, indicators_t *f)
 {
 	(void)l;
 	(void)f;
@@ -47,15 +47,15 @@ int percentage(va_list 1, indicators_t *f)
 
 /**
  *revPrint - prints string in reverse
- *@1: arguments
+ *@l: arguments
  *@f: pointer to struct
  *
  * Return: length of printed string
  */
-int revPrint(va_list 1, indicators_t *f)
+int revPrint(va_list l, indicators_t *f)
 {
 	int i = 0, j;
-	char *s = va_arg(1, char *);
+	char *s = va_arg(l, char *);
 
 	(void)f;
 	if (!s)
@@ -72,17 +72,17 @@ int revPrint(va_list 1, indicators_t *f)
 
 /**
  *rot13Print - prints string using rot13
- *@1: arguments
+ *@l: arguments
  *@f: pointer to struct
  *
  *Return: length of printed string
  */
-int rot13Print(va_list 1, indicators_t *f)
+int rot13Print(va_list l, indicators_t *f)
 {
 	int i, j;
 	char normal[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
-	char *s = va_arg(1, char *);
+	char *s = va_arg(l, char *);
 
 	(void)f;
 	for (j = 0; s[j]; j++)

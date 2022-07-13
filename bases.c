@@ -1,14 +1,14 @@
 #include "main.h"
 /**
  *hexaPrint - prints hexadecimal numbers (lowercase)
- *@1: arguments
+ *@l: arguments
  *@f: pointer to struct
  *
  *Return: number of printed chars
  */
-int hexaPrint(va_list 1, indicators_t *f)
+int hexaPrint(va_list l, indicators_t *f)
 {
-	unsigned int num = va_arg(1, unsigned int);
+	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 16, 1);
 	int count = 0;
 
@@ -20,12 +20,12 @@ int hexaPrint(va_list 1, indicators_t *f)
 
 /**
  *hexaBig - prints hexadecimal numbers (uppercase)
- *@1: arguments
+ *@l: arguments
  *@f: pointer to struct
  *
  *Return: number of printed chars
  */
-int hexaBig(va_list 1, indicators_t *f)
+int hexaBig(va_list l, indicators_t *f)
 {
 	unsigned int num = va_arg(1, unsigned int);
 	char *str = convert(num, 16, 0);
@@ -39,12 +39,12 @@ int hexaBig(va_list 1, indicators_t *f)
 
 /**
  *terribletwos - prints binary numbers
- *@1: arguments
+ *@l: arguments
  *@f: pointer to struct
  *
  *Return: number of printed chars
  */
-int terribletwos(va_list 1, indicators_t *f)
+int terribletwos(va_list l, indicators_t *f)
 {
 	unsigned int num = va_arg(1, unsigned int);
 	char *str = convert(num, 2, 0);
@@ -55,12 +55,12 @@ int terribletwos(va_list 1, indicators_t *f)
 
 /**
  *eightPrint - prints octal numbers
- *@1: arguments
+ *@l: arguments
  *@f: pointer to struct
  *
  *Return: number of printed chars
  */
-int eightPrint(va_list 1, indicators_t *f)
+int eightPrint(va_list l, indicators_t *f)
 {
 	unsigned int num = va_arg(1, unsigned int);
 	char *str = convert(num, 8, 0);

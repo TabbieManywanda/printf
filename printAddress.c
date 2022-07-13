@@ -1,15 +1,15 @@
 #include "main.h"
 /**
  *printAddress - prints address
- *@1: arguments
+ *@l: arguments
  *@f: pointer to struct
  *
  *Return: number of printed chars
  */
-int printAddress(va_list 1, indicators_t *f)
+int printAddress(va_list l, indicators_t *f)
 {
 	char *str;
-	unsigned long int p = va_arg(1, unsigned long int);
+	unsigned long int p = va_arg(l, unsigned long int);
 
 	register int count = 0;
 

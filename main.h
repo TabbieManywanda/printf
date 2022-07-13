@@ -34,26 +34,26 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int _puts(char *str);
 
-int rot13Print(va_list 1, indicators_t *f);
-int revPrint(va_list 1, indicators_t *f);
-int capitalsPrint(va_list 1, indicators_t *f);
-int printAddress(va_list 1, indicators_t *f);
-int percentage(va_list 1, indicators_t *f);
+int rot13Print(va_list l, indicators_t *f);
+int revPrint(va_list l, indicators_t *f);
+int capitalsPrint(va_list l, indicators_t *f);
+int printAddress(va_list l, indicators_t *f);
+int percentage(va_list l, indicators_t *f);
 
 char *convert(unsigned long int num, int base, int lowercase);
 int (*get_print(char s))(va_list, indicators_t *);
 int get_indicator(char s, indicators_t *f);
 
-int printStr(va_list 1, indicators_t *f);
-int printC(va_list 1, indicators_t *f);
+int printStr(va_list l, indicators_t *f);
+int printC(va_list l, indicators_t *f);
 
-int printInteger(va_list 1, indicators_t *f);
+int printInteger(va_list l, indicators_t *f);
 void printNum(int n);
-int unsignPrint(va_list 1, indicators_t *f);
+int unsignPrint(va_list l, indicators_t *f);
 int counter(int i);
-int hexaPrint(va_list 1, indicators_t *f);
-int hexaBig(va_list 1, indicators_t *f);
-int terribletwos(va_list 1, indicators_t *f);
-int eightPrint(va_list 1, indicators_t *f);
+int hexaPrint(va_list l, indicators_t *f);
+int hexaBig(va_list l, indicators_t *f);
+int terribletwos(va_list l, indicators_t *f);
+int eightPrint(va_list l, indicators_t *f);
 
 #endif
