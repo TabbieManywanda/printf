@@ -3,3 +3,5 @@
 2. Handling the following custom conversion specifiers:
     b: the unsigned int argument is converted to binary
 3. Handling the following conversion specifiers: u,o,x,X
+4. Using a local buffer of 1024 chars in order to call write as little as possible.
+5. 
