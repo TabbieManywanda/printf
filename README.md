@@ -8,5 +8,7 @@
 6. Handling the following conversion specifier: p.
 7. Handling the following flag characters for non-custom conversion specifiers: + ,space,#
 8. Handling the following length modifiers for non-custom conversion specifiers: l,h
-     Conversion specifiers to handle: d, i, u, o, x, X
-9. Handle the field width for non-custom conversion specifiers.     
+     -Conversion specifiers to handle: d, i, u, o, x, X
+9. Handling the field width for non-custom conversion specifiers.
+10. Handling the precision for non-custom conversion specifiers.
+11. 
