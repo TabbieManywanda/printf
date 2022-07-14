@@ -2,3 +2,4 @@
 1. Handling the following conversion specifiers: d and i.
 2. Handling the following custom conversion specifiers:
     b: the unsigned int argument is converted to binary
+3. Handling the following conversion specifiers: u,o,x,X
