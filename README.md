@@ -11,4 +11,4 @@
      -Conversion specifiers to handle: d, i, u, o, x, X
 9. Handling the field width for non-custom conversion specifiers.
 10. Handling the precision for non-custom conversion specifiers.
-11. 
+11. Handling the 0 flag character for non-custom conversion specifiers
