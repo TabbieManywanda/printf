@@ -6,4 +6,6 @@
 4. Using a local buffer of 1024 chars in order to call write as little as possible.
 5. Handling custom conversion specifier:
 6. Handling the following conversion specifier: p.
-7. Handling the following flag characters for non-custom conversion specifiers: + ,space,# 
+7. Handling the following flag characters for non-custom conversion specifiers: + ,space,#
+8. Handling the following length modifiers for non-custom conversion specifiers: l,h
+     Conversion specifiers to handle: d, i, u, o, x, X
