@@ -11,7 +11,7 @@ DESCRIPTION
 The _printf function is a variadic fnction which produces output according to a format specified by the user and prints it to the standard output; much like the standard C library printf function.
 It can receive a variable number of arguments.
 
-.RS 3
+.SH SYSTEM CALLS
 c	prints a character variable
 .br
 s	prints a string variable
@@ -28,7 +28,6 @@ x	prints a hexadecimal number
 .br
 X	prints a hexadecimal number in caps
 .br
-.RE
 
 .SH RETURN
 The function will return the number of characters printed if successful. If unsuccessful,or if any errors are encountered, it returns -1.
