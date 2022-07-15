@@ -17,4 +17,4 @@
       r : prints the reversed string
 14. Handling the following custom conversion specifier:
     R: prints the rot13'ed string
-15. 
+15. All the above options work well together.
