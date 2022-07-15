@@ -1,7 +1,12 @@
 #include "main.h"
 #include <stddef.h>
 
-/**                                                                                                                                                                    *get_print - selects right printing function                                                                                                                           *@s: conversion specifier                                                                                                                                              *                                                                                                                                                                      *Return: pointer to matching printing function                                                                                                                         */
+/**
+*get_print - selects right printing function
+*@s: conversion specifier
+*
+*Return: pointer to matching printing function
+*/
 
 int (*get_print(char s))(va_list, indicators_t *)
 {
