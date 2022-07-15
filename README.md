@@ -13,4 +13,5 @@
 10. Handling the precision for non-custom conversion specifiers.
 11. Handling the 0 flag character for non-custom conversion specifiers
 12. Handling the - flag character for non-custom conversion specifiers.
-13. 
+13. Handling the following custom conversion specifier:
+      r : prints the reversed string
