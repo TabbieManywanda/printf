@@ -15,3 +15,6 @@
 12. Handling the - flag character for non-custom conversion specifiers.
 13. Handling the following custom conversion specifier:
       r : prints the reversed string
+14. Handling the following custom conversion specifier:
+    R: prints the rot13'ed string
+15. 
