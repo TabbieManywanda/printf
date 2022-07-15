@@ -6,7 +6,7 @@
  *
  *Return: number of chars printed
  */
-int printHexa(va_list l, indicators_t *f)
+int hexaPrint(va_list l, indicators_t *f)
 {
 	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 16, 1);

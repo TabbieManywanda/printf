@@ -75,7 +75,7 @@ int rot13Print(va_list l, indicators_t *f)
 	(void)f;
 	for (j = 0; s[j]; j++)
 	{
-		if (s[j] < 'A' || (s[j] > 'Z' && s[j] < 'a' || s[j] > 'z'))
+		if (s[j] < 'A' || (s[j] > 'Z' && s[j] < 'a') || s[j] > 'z')
 			_putchar(s[j]);
 		else
 		{

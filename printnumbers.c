@@ -9,7 +9,7 @@
 int printInteger(va_list l, indicators_t *f)
 {
 	int n = va_arg(l, int);
-	int res = count_digit(n);
+	int res = counter(n);
 
 	if (f->space == 1 && f->plus == 0 && n >= 0)
 		res += _putchar(' ');
@@ -17,7 +17,7 @@ int printInteger(va_list l, indicators_t *f)
 		res += _putchar('+');
 	if (n <= 0)
 		res++;
-	print_number(n);
+	printNum(n);
 	return (res);
 }
 
@@ -56,7 +56,7 @@ void printNum(int n)
 		n1 = n;
 
 	if (n1 / 10)
-		print_number(n1 / 10);
+		printNum(n1 / 10);
 	_putchar((n1 % 10) + '0');
 }
 
