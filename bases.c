@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *printHexa - prints a number in hexadecimal lowercase
+ *hexaPrint - prints a number in hexadecimal lowercase
  *@l: arguments
  *@f: pointer to struct
  *
@@ -39,7 +39,7 @@ int hexaBig(va_list l, indicators_t *f)
 }
 
 /**
- *terrible twos - prints a number in base 2
+ *terribletwos - prints a number in base 2
  *@l: arguments
  *@f: pointer to struct
  *

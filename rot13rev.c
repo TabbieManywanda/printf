@@ -94,6 +94,8 @@ int rot13Print(va_list l, indicators_t *f)
  *percentage - prints a percent
  *@l: arguments
  *@f: pointer to struct
+ *
+ * Return: number of char printed
  */
 int percentage(va_list l, indicators_t *f)
 {
