@@ -12,3 +12,5 @@
 9. Handling the field width for non-custom conversion specifiers.
 10. Handling the precision for non-custom conversion specifiers.
 11. Handling the 0 flag character for non-custom conversion specifiers
+12. Handling the - flag character for non-custom conversion specifiers.
+13. 
