@@ -11,7 +11,6 @@
 */
 
 int _putchar(char c)
-  
 {
 static char buf[1024];
 static int i;
